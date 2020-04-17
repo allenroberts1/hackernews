@@ -6,17 +6,8 @@ import App, { Search, Button, Table } from './App';
 
 describe('IS Search Button', () => {
 
-  it('renders', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
-  });
-
-  test('snapshots', () => {
-    const component = renderer.create(
-      <App />
-  );
-    let tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+  it('has search button', () => {
+    expect(component.contains(Search)).toBe(true)
   });
 
 });
