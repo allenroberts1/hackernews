@@ -1,5 +1,7 @@
-describe('My Test Suite', () => {
-    it('My Test Case', () => {
-      expect(true).toEqual(true);
+describe('IS Search Button', () => {
+
+    it('has search button', () => {
+      expect(component.contains(Search)).toBe(true)
     });
+  
   });
