@@ -14,11 +14,12 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "react-scripts build",
-    "test": "jest --config ./jest.config.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject"
   },
+  "keywords": [],
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -35,9 +36,13 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "react-addons-test-utils": "^15.6.2",
+    "react-hot-loader": "^4.12.20",
     "react-test-renderer": "^16.13.1"
   }
 }
