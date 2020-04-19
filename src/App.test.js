@@ -13,4 +13,5 @@ describe('App', () => {
         ReactDOM.render(<App />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
-}
+});
+
