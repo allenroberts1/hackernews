@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import { sortBy } from 'lodash';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
+import './App.css';
+
 
 const DEFAULT_QUERY = 'redux';
 const DEFAULT_PAGE = 0;
@@ -299,8 +301,8 @@ class Table extends Component {
     const reverseSortedList = isSortReverse
       ? sortedList.reverse()
       : sortedList;
-
 return(
+   
   <div className="table">
     <div className="table-header">
       <span style={{ width: '40%' }}>
@@ -366,6 +368,7 @@ return(
       </Button>
     </span>
   </div>
+    
   )}
   </div>
 );

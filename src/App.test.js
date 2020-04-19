@@ -1,13 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
-import App, { Search, Button, Table } from './App';
+import { render } from '@testing-library/react';
+import App from './App';
 
-describe('IS Search Button', () => {
-
-  it('has search button', () => {
-    expect(component.contains(Search)).toBe(true)
-  });
-
+test('renders learn react link', () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
 });

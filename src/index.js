@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const title = 'React with Webpack and Babel';
-
 ReactDOM.render(
-  <div>{title}</div>,
-  document.getElementById('app')
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
 
 if (module.hot){
   module.hot.accept()

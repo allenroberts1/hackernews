@@ -1,5 +1,5 @@
 {
-  "name": "hackernews",
+  "name": "ryansmitty",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,19 +7,16 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "classnames": "^2.2.6",
-    "lodash": "^4.17.15",
-    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "keywords": [],
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -34,15 +31,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "babel-loader": "^8.1.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "react-addons-test-utils": "^15.6.2",
-    "react-hot-loader": "^4.12.20",
-    "react-test-renderer": "^16.13.1"
   }
 }
